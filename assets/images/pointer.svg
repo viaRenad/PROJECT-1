@@ -1,0 +1,24 @@
+<svg width="52" height="29" viewBox="0 0 52 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="0" y="0" width="52" height="29"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_522_7030_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_dd_522_7030)" data-figma-bg-blur-radius="4">
+<g clip-path="url(#paint0_angular_522_7030_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.0055 -0.01746 0 25.46 19.5)"><foreignObject x="-1073.31" y="-1073.31" width="2146.62" height="2146.62"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(136, 96, 55, 1) 0deg,rgba(173, 129, 78, 1) 36deg,rgba(202, 155, 94, 1) 103.846deg,rgba(234, 184, 114, 1) 180deg,rgba(136, 96, 55, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M8 20V25H44V20L26 14L8 20Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.68124657869338989,&#34;g&#34;:0.50865161418914795,&#34;b&#34;:0.30615788698196411,&#34;a&#34;:1.0},&#34;position&#34;:0.10000000149011612},{&#34;color&#34;:{&#34;r&#34;:0.79262757301330566,&#34;g&#34;:0.60896831750869751,&#34;b&#34;:0.37254390120506287,&#34;a&#34;:1.0},&#34;position&#34;:0.28846153616905212},{&#34;color&#34;:{&#34;r&#34;:0.91764706373214722,&#34;g&#34;:0.72156864404678345,&#34;b&#34;:0.44705882668495178,&#34;a&#34;:1.0},&#34;position&#34;:0.50},{&#34;color&#34;:{&#34;r&#34;:0.53553712368011475,&#34;g&#34;:0.37741664052009583,&#34;b&#34;:0.21931117773056030,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.68124657869338989,&#34;g&#34;:0.50865161418914795,&#34;b&#34;:0.30615788698196411,&#34;a&#34;:1.0},&#34;position&#34;:0.10000000149011612},{&#34;color&#34;:{&#34;r&#34;:0.79262757301330566,&#34;g&#34;:0.60896831750869751,&#34;b&#34;:0.37254390120506287,&#34;a&#34;:1.0},&#34;position&#34;:0.28846153616905212},{&#34;color&#34;:{&#34;r&#34;:0.91764706373214722,&#34;g&#34;:0.72156864404678345,&#34;b&#34;:0.44705882668495178,&#34;a&#34;:1.0},&#34;position&#34;:0.50},{&#34;color&#34;:{&#34;r&#34;:0.53553712368011475,&#34;g&#34;:0.37741664052009583,&#34;b&#34;:0.21931117773056030,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:1.2989611082180226e-14,&#34;m01&#34;:-34.919998168945312,&#34;m02&#34;:42.919998168945312,&#34;m10&#34;:11.000000953674316,&#34;m11&#34;:-3.1459281387606966e-14,&#34;m12&#34;:13.999999046325684},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+</g>
+<defs>
+<filter id="filter0_dd_522_7030" x="0" y="0" width="52" height="29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="3"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.552885 0 0 0 0 0.318154 0 0 0 0 0.116956 0 0 0 0.33 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_522_7030"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-6"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.796078 0 0 0 0 0.564706 0 0 0 0 0.321569 0 0 0 0.35 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_522_7030" result="effect2_dropShadow_522_7030"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_522_7030" result="shape"/>
+</filter>
+<clipPath id="bgblur_0_522_7030_clip_path" transform="translate(0 0)"><path d="M8 20V25H44V20L26 14L8 20Z"/>
+</clipPath><clipPath id="paint0_angular_522_7030_clip_path"><path d="M8 20V25H44V20L26 14L8 20Z"/></clipPath></defs>
+</svg>

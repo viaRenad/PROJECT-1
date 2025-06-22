@@ -1,48 +1,104 @@
-# Flutter App Design & Implementation
+# Mulabbi
 
-## Overview
-In this group project, you will design and implement a different app of your choice using Flutter. This project is an opportunity for you to showcase your creativity and apply various Flutter concepts and widgets to create a unique and engaging user experience.
+<p style="">
+<span style="color:red; font-size: 10px">V0.1</span>
+Inital draft, not the final product
+</p>
+an application to help pilgrims detects their nusk step by step
 
-## Project proposal:
-1. **Application for tourism**
-2. **Workspace booking app**
-3. **Delivery application**
-4. **Transportation application**
-5. **Online courses application**
+## What to expect from the the readme ?
 
-You are required to implement at least **five different UIs** and use the following mandatory concepts:
+- The Motive behind the project
+- The Technologies used in the project
+- Guideline to run the application within your enviroment
 
-## Mandatory Requirements
-1. **Clean structure folders/files**: You must to divide the projects into folders/files.
-2. **using CRUD system**: Create new data (insert), Read all data, Update data, Delete data.
+| **_Content_**                  | Reference         |
+| ------------------------------ | ----------------- |
+| Motivation Behind the project  | Motivation [^1]   |
+| Core Features                  | Features [^2]     |
+| Technologies \*\*\*\*          | Technologies [^3] |
+| External Packages              | Soon...           |
+| Running applciation Guidelines | Guidelines [^4]   |
 
-## Bonus Points
-- **Another packages**: Use another packages other than that we worked with.
-- **Different application idea**: Design and implementation another project idea. 
+---
 
-## Guidelines
-- This is a **group project**; each group is expected to work independently.
-- You are encouraged to explore and demonstrate your creativity. Your design and implementation should reflect your unique vision and skills.
+[^1]: Motivation
 
-## Submission Requirements
-- **Screenshots/Videos**: Include clear screenshots or a short video of your project demonstrating its key features and UI.
-- **Documented README File**: Your project should include a README file that clearly describes:
-  - The purpose and features of your app.
-  - The widgets and external packages used.
-  - Instructions for running the app.
-  - Any additional notes or explanations about your design choices.
+## Motivation
+
+> <span >Many pilgrims came for the **FIRST** time to perform their Nusks but they don't know how to follow or how to perform their nusks</span>
+
+### <span style="color:green;">**_Mulabbi_**</span> is is a mobile application design to help, guide, and tracks the pilgrims nusks step by step.
+
+`But There's more!`
+
+- **Centralized** most things the pilgrims need
+- **Modern Design** with emphsize on easy navigation
+- To be added...
+
+---
+
+[^2]: Features
+
+## Features
+
+- Prayers time built-in
+- Library of Adeiyah
+- Nusk detection step by step
+- View history of prevoius nusks
+- Notification
+- Roadmap
+- profile management
+- Support multiple languages (arabic/english) <span style="color:red; font-size:10px;">for now</span>
+
+### Toward the future
+
+- Crowd Detection
+- Local Data Management (offline)
+- AI Chat helper
+- and much more !!!
+
+[^3]: Technologies
+
+## Technologies
+
+| Technology      | Type                 | Purpose                                                                                                                                                                                   |
+| --------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Flutter         | Programming Language | The core of the project                                                                                                                                                                   |
+| Supabase        | Multipurpose         | <ol><li>Database</li><li>Api</li><li>Authentecation</li></ol>                                                                                                                             |
+| Aladhan         | API                  | Getting prayers time [API Link](https://api.aladhan.com/v1/timingsByAddress/${date}?address=Makkah%2C+Saudi+Arabia&method=4&shafaq=general&latitudeAdjustmentMethod=1&calendarMethod=UAQ) |
+| To Be Continued | Soon...              | Soon...                                                                                                                                                                                   |
+
+## External Packages
+
+| Packege                     | Link                                                           | Purpose                                                       |
+| --------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------- |
+| introduction_screen         | [source](https://pub.dev/packages/introduction_screen)         | onboarding                                                    |
+| flutter_native_splash       | [source](https://pub.dev/packages/flutter_native_splash)       | splash screen                                                 |
+| pinput                      | [source](https://pub.dev/packages/pinput)                      | auth otp input                                                |
+| supabase_flutter            | [source](https://pub.dev/packages/supabase_flutter)            | <ul><li>Database</li><li>Api</li><li>Authentecation</li></ul> |
+| getX                        | [source](https://pub.dev/packages/get)                         | State management                                              |
+| Dio                         | [source](https://pub.dev/packages/dio)                         | Networking                                                    |
+| flutter_local_notifications | [source](https://pub.dev/packages/flutter_local_notifications) | Notification                                                  |
+| to be continued             |                                                                | Soon...                                                       |
+
+## Data Sources
+
+| Data Source | Link                                                                                                                                                                 | Purpose              |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Aladhan     | [API Link](https://api.aladhan.com/v1/timingsByAddress/${date}?address=Makkah%2C+Saudi+Arabia&method=4&shafaq=general&latitudeAdjustmentMethod=1&calendarMethod=UAQ) | Getting prayers time |
+| Zad Content | [API Link](https://mulabbi-api.vercel.app/api/contents)                                                                                                              | Zad content          |
+| Adeiyah     | [API Link](https://68297d8b6075e87073a69d31.mockapi.io/duas) `There's local verison`                                                                                 | Adeiyah              |
+
+[^4]: Guidelines
+<img width="349" alt="Screenshot 1446-12-26 at 8 55 16 AM" src="https://github.com/user-attachments/assets/8c8f8eeb-4d1c-48d0-8a1d-2ed32ebea21b" />
+
+<img width="349" alt="Screenshot 1446-12-26 at 8 55 58 AM" src="https://github.com/user-attachments/assets/b39b0617-47be-4c1e-a762-73506948b44e" />
+
+<img width="349" alt="Screenshot 1446-12-26 at 8 56 24 AM" src="https://github.com/user-attachments/assets/5fbdc904-7fba-47e4-8ee0-c3a15f6d993a" />
+
+## Running the app within your flutter
 
 
-## Resources
-- **Widgets Documentation & Examples**: [Material Design Components](https://m3.material.io/components/badges/overview)
-- **External UI Packages**: [Flutter Gems](https://fluttergems.dev/)
-- **Color Palettes**: [Color Hunt](https://colorhunt.co/)
-- **Design Inspiration**: Figma Community, Pinterest, Dribbble, Mobbin
 
-## Deadline
-- **Submission Deadline**: 16 June, 9:00 AM
-
-## Submission
-Ensure that your project meets all the mandatory requirements. Submit your project files along with a brief documentation describing the features and functionalities you've implemented.
-
-Good luck, and have fun creating your app! 🎨📱
+> Soon...
