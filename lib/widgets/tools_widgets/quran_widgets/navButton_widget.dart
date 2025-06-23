@@ -21,7 +21,7 @@ class NavigationButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 130,
+      width: 135,
       height: 50,
       decoration: BoxDecoration(
         color: color,
@@ -45,7 +45,7 @@ class NavigationButton extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 0,
+                    horizontal: 1,
                     vertical: 10,
                   ),
                 ),
@@ -55,7 +55,7 @@ class NavigationButton extends StatelessWidget {
                       TextDirection.rtl, // Important for Arabic layout
                   children: [
                     Icon(icon, color: textColor, size: 18),
-                    const SizedBox(width: 5),
+                    const SizedBox(width: 0),
                     Text(
                       label,
                       style: TextStyle(
@@ -84,7 +84,7 @@ class NavigationButton extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 2,
+                    horizontal: 1,
                     vertical: 12,
                   ),
                 ),

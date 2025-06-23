@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
+import 'package:mulabbi/controllers/track_controller.dart';
 import 'package:mulabbi/core/colors.dart';
 
 class DateAndTitleRow extends StatefulWidget {
@@ -59,6 +61,7 @@ class _DateAndTitleRowState extends State<DateAndTitleRow>
     final gregorianDay = _gregorianDate.day;
     final gregorianMonth = _gregorianDate.month;
     final gregorianYear = _gregorianDate.year;
+    late final trackController = Get.put(TrackController());
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 28.0, vertical: 12),
@@ -126,8 +129,10 @@ class _DateAndTitleRowState extends State<DateAndTitleRow>
                   Rect.fromLTWH(0, 0, bounds.width, bounds.height),
                 ),
             blendMode: BlendMode.srcIn,
-            child: const Text(
-              'اختر نُسُكك لبدء رحلتك',
+            child: Text(
+              !trackController.isTrackActive
+                  ? 'اختر نُسُكك لبدء رحلتك'
+                  : "النسك الحالي",
               style: TextStyle(
                 fontFamily: 'Cairo',
                 fontSize: 18,

@@ -16,7 +16,7 @@ class ContentItemCard extends StatelessWidget {
             margin: EdgeInsets.only(bottom: 12),
             padding: EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: Color.fromARGB(189, 218, 201, 178),
+              color: Color(0xFFEAE2D6),
               borderRadius: BorderRadius.circular(15),
             ),
             child: Column(
@@ -47,6 +47,7 @@ class ContentItemCard extends StatelessWidget {
                 adhkarItem.repeat,
                 style: TextStyle(
                   fontSize: 15,
+                  fontFamily: 'AlNile',
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF7E5A3B),
                 ),

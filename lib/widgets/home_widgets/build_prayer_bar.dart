@@ -1,12 +1,68 @@
+import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:mulabbi/widgets/home_widgets/prayer_item.dart';
+import 'package:adhan/adhan.dart';
+import 'prayer_item.dart';
 
-class PrayerBar extends StatelessWidget {
+class PrayerBar extends StatefulWidget {
   const PrayerBar({super.key});
 
   @override
+  _PrayerBarState createState() => _PrayerBarState();
+}
+
+class _PrayerBarState extends State<PrayerBar> {
+  late PrayerTimes _times;
+  Timer? _timer;
+
+  // map Arabic name → asset filename
+  static const _iconMap = {
+    'الفجر': 'assets/images/fajr.svg',
+    'الظهر': 'assets/images/dhuhr.svg',
+    'العصر': 'assets/images/asr.svg',
+    'المغرب': 'assets/images/maghrib.svg',
+    'العشاء': 'assets/images/isha.svg',
+  };
+
+  @override
+  void initState() {
+    super.initState();
+    _calculatePrayerTimes();
+    // rebuild every minute so the active pointer moves on time
+    _timer = Timer.periodic(const Duration(minutes: 1), (_) {
+      setState(() {});
+    });
+  }
+
+  void _calculatePrayerTimes() {
+    // replace with real coords if you like
+    final coords = Coordinates(21.4225, 39.8262);
+    final params = CalculationMethod.muslim_world_league.getParameters();
+    _times = PrayerTimes(coords, DateComponents.from(DateTime.now()), params);
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final now = DateTime.now();
+    final prayers =
+        <String, DateTime>{
+          'الفجر': _times.fajr,
+          'الظهر': _times.dhuhr,
+          'العصر': _times.asr,
+          'المغرب': _times.maghrib,
+          'العشاء': _times.isha,
+        }.entries.toList();
+
+    // find the next one (or wrap to الفجر)
+    int nextIndex = prayers.indexWhere((e) => e.value.isAfter(now));
+    if (nextIndex < 0) nextIndex = 0;
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 28.0),
       child: SizedBox(
@@ -14,30 +70,27 @@ class PrayerBar extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(30),
           child: BackdropFilter(
-            // very slight blur
             filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
             child: Container(
               decoration: BoxDecoration(
-                // Semi-transparent background with gradient
                 gradient: const LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   stops: [0.0, 0.5, 1.0],
                   colors: [
-                    Color.fromRGBO(0, 0, 0, 0.263), // 15% black
-                    Color.fromRGBO(0, 0, 0, 0.037), // 5% black
-                    Color.fromRGBO(0, 0, 0, 0.257), // 20% black
+                    Color.fromRGBO(0, 0, 0, 0.263),
+                    Color.fromRGBO(0, 0, 0, 0.037),
+                    Color.fromRGBO(0, 0, 0, 0.257),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(30),
                 border: Border.all(
-                  color: Color.fromRGBO(120, 59, 13, 1),
+                  color: const Color.fromRGBO(120, 59, 13, 1),
                   width: 1,
                 ),
               ),
               child: Container(
                 decoration: BoxDecoration(
-                  // Subtle brown tint overlay
                   gradient: const LinearGradient(
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
@@ -51,35 +104,22 @@ class PrayerBar extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 28.0),
                   child: Row(
+                    // Ensure Arabic right-to-left layout
+                    textDirection: TextDirection.rtl,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      PrayerItem(
-                        name: 'العشاء',
-                        time: '4:56 AM',
-                        iconPath: 'assets/images/isha.svg',
-                      ),
-                      PrayerItem(
-                        name: 'المغرب',
-                        time: '12:09 PM',
-                        iconPath: 'assets/images/maghrib.svg',
-                      ),
-                      PrayerItem(
-                        name: 'العصر',
-                        time: '4:26 PM',
-                        iconPath: 'assets/images/asr.svg',
-                        isActive: true,
-                      ),
-                      PrayerItem(
-                        name: 'الظهر',
-                        time: '6:06 PM',
-                        iconPath: 'assets/images/dhuhr.svg',
-                      ),
-                      PrayerItem(
-                        name: 'الفجر',
-                        time: '7:21 PM',
-                        iconPath: 'assets/images/fajr.svg',
-                      ),
-                    ],
+                    children: List.generate(prayers.length, (i) {
+                      final name = prayers[i].key;
+                      final time = TimeOfDay.fromDateTime(
+                        prayers[i].value,
+                      ).format(context);
+                      final isActive = i == nextIndex;
+                      return PrayerItem(
+                        name: name,
+                        time: time,
+                        iconPath: _iconMap[name]!,
+                        isActive: isActive,
+                      );
+                    }),
                   ),
                 ),
               ),

@@ -29,7 +29,7 @@ class CustomTextField extends StatelessWidget {
             fontSize: 16,
           ),
         ),
-        const SizedBox(height: 3),
+        const SizedBox(height: 10),
         SizedBox(
           width: 344,
           height: 56,

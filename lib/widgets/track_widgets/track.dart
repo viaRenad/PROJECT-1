@@ -31,19 +31,19 @@ class Track extends StatelessWidget {
             children: [
               Image.asset("assets/images/steps-background.png"),
               Positioned(
-                bottom: 200,
+                bottom: 150,
                 child: Image.asset(
                   "assets/images/steps-fill.png",
-                  width: 400,
+                  width: 500,
                   height: height == null ? null : height! - 400,
                   fit: BoxFit.contain,
                 ),
               ),
               Positioned(
-                bottom: -300,
+                bottom: -310,
                 child: Image.asset(
                   "assets/images/steps-fill.png",
-                  width: 400,
+                  width: 500,
                   height: height == null ? null : height! - 400,
                   fit: BoxFit.contain,
                 ),

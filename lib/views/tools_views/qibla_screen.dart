@@ -317,7 +317,7 @@ String getHeading(double direction, double qiblaDirection) {
     return "أنت تواجه القبلة";
   }
   if (distance < 180) {
-    return "تحرك ${distance}° إلى اليسار";
+    return "تحرك $distance° إلى اليسار";
   }
   return "تحرك ${(distance - 360).abs()}° إلى اليمين";
 }

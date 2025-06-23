@@ -23,71 +23,77 @@ class TopicWidget extends StatelessWidget {
       imageProvider = AssetImage(imagePath);
     }
 
-    return InkWell(
-      onTap: onTap,
-      child: Container(
-        width: 151,
-        height: 215,
-        decoration: const BoxDecoration(
-          color: Color.fromARGB(0, 252, 248, 171),
-        ),
-        child: Column(
-          children: [
-            Container(
-              width: 139,
-              height: 122,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                image: DecorationImage(image: imageProvider, fit: BoxFit.cover),
-              ),
-            ),
-            const SizedBox(height: 8),
-            Padding(
-              padding: const EdgeInsets.only(right: 7),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Container(
-                  width: 50,
-                  height: 20,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFFE8D9C4),
-                    borderRadius: BorderRadius.circular(8),
+    return Padding(
+      padding: EdgeInsets.only(right: 1),
+      child: InkWell(
+        onTap: onTap,
+        child: Container(
+          width: 151,
+          height: 211,
+          decoration: const BoxDecoration(
+            color: Color.fromARGB(0, 252, 248, 171),
+          ),
+          child: Column(
+            children: [
+              Container(
+                width: 139,
+                height: 122,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  image: DecorationImage(
+                    image: imageProvider,
+                    fit: BoxFit.cover,
                   ),
-                  child: Center(
-                    child: Text(
-                      Category,
-                      style: const TextStyle(
-                        fontSize: 10,
-                        color: Colors.black,
-                        fontFamily: 'Cairo',
+                ),
+              ),
+              const SizedBox(height: 8),
+              Padding(
+                padding: const EdgeInsets.only(right: 7),
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Container(
+                    width: 50,
+                    height: 20,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFE8D9C4),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Center(
+                      child: Text(
+                        Category,
+                        style: const TextStyle(
+                          fontSize: 10,
+                          color: Colors.black,
+                          fontFamily: 'Cairo',
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                   ),
                 ),
               ),
-            ),
-            const SizedBox(height: 1),
-            Align(
-              alignment: Alignment.bottomRight,
-              child: Container(
-                width: 140,
-                height: 60,
-                padding: const EdgeInsets.all(8),
-                child: Text(
-                  topicTitle,
-                  style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 12,
-                    fontFamily: 'Cairo',
+              const SizedBox(height: 1),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Container(
+                  width: 140,
+                  height: 60,
+                  padding: const EdgeInsets.all(8),
+                  child: Text(
+                    topicTitle,
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 13,
+                      fontFamily: 'Cairo',
+                    ),
+                    textAlign: TextAlign.right,
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 3,
                   ),
-                  textAlign: TextAlign.right,
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 3,
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

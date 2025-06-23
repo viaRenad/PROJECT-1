@@ -38,15 +38,41 @@ class _LiveStreamPageState extends State<LiveStreamPage> {
   @override
   Widget build(BuildContext context) {
     return YoutubePlayerBuilder(
-      player: YoutubePlayer(controller: _controller),
-      builder:
-          (context, player) => Scaffold(
-            appBar: AppBar(
-              title: Text(widget.title),
-              backgroundColor: Colors.brown,
+      player: YoutubePlayer(
+        controller: _controller,
+        showVideoProgressIndicator: true,
+      ),
+      builder: (context, player) {
+        return Scaffold(
+          backgroundColor: const Color(0xFFF5F2EE),
+          appBar: AppBar(
+            backgroundColor: const Color(0xFFF5F2EE),
+            elevation: 0,
+            centerTitle: true,
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_ios, color: Color(0xFF7E5A3B)),
+              onPressed: () => Navigator.pop(context),
             ),
-            body: Center(child: player),
+            title: Text(
+              widget.title,
+              style: const TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w700,
+                color: Color(0xFF7E5A3B),
+                fontFamily: 'AlNile',
+              ),
+              textAlign: TextAlign.center,
+            ),
           ),
+          body: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: player,
+            ),
+          ),
+        );
+      },
     );
   }
 }

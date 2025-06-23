@@ -18,7 +18,7 @@ class JourneyAttachments extends StatelessWidget {
       children: [
         // 🏷 Section title
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

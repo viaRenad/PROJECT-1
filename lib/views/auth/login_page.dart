@@ -7,7 +7,6 @@ import 'package:mulabbi/views/shell/main_scaffold.dart';
 // import 'package:mulabbi/views/shell/main_scaffold.dart';
 import 'package:mulabbi/widgets/auth_widgets/auth_custom.dart';
 import 'package:mulabbi/widgets/tools_widgets/button_custom.dart';
-import 'package:mulabbi/widgets/auth_widgets/social_widget.dart';
 import 'package:mulabbi/widgets/auth_widgets/textfield_custom.dart';
 
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -25,82 +24,6 @@ class _LoginScreenState extends State<LoginScreen> {
   bool _rememberMe = false;
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  // bool _isLoading = false;
-
-  // Future<void> _signIn() async {
-  //   setState(() {
-  //     _isLoading = true;
-  //   });
-
-  //   try {
-  //     await Supabase.instance.client.auth.signInWithPassword(
-  //       email: emailController.text,
-  //       password: passwordController.text,
-  //     );
-  //   } on AuthException catch (error) {
-  //     if (mounted) {
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text('خطأ في تسجيل الدخول: ${error.message}')),
-  //       );
-  //     }
-  //   } catch (error) {
-  //     if (mounted) {
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text('حدث خطأ غير متوقع: $error')),
-  //       );
-  //     }
-  //   } finally {
-  //     if (mounted) {
-  //       setState(() {
-  //         _isLoading = false;
-  //       });
-  //     }
-  //   }
-  // }
-
-  // Future<void> _signUp() async {
-  //   setState(() {
-  //     _isLoading = true;
-  //   });
-
-  //   try {
-  //     await Supabase.instance.client.auth.signUp(
-  //       email: emailController.text,
-  //       password: passwordController.text,
-  //     );
-
-  //     if (mounted) {
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         const SnackBar(content: Text('تم إنشاء الحساب بنجاح!')),
-  //       );
-  //     }
-  //   } on AuthException catch (error) {
-  //     if (mounted) {
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text('خطأ في إنشاء الحساب: ${error.message}')),
-  //       );
-  //     }
-  //   } catch (error) {
-  //     if (mounted) {
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text('حدث خطأ غير متوقع: $error')),
-  //       );
-  //     }
-  //   } finally {
-  //     if (mounted) {
-  //       setState(() {
-  //         _isLoading = false;
-  //       });
-  //     }
-  //   }
-  // }
-
-  // Future<void> _continueAsGuest() async {
-  //   // الانتقال للصفحة الرئيسية كزائر
-  //   Navigator.of(context).pushReplacement(
-  //     MaterialPageRoute(builder: (_) => const MainScaffold()),
-  //   );
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -119,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 keyboardType: TextInputType.emailAddress,
                 controller: emailController,
               ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 17),
               CustomTextField(
                 label: "*كلمة المرور",
                 hint: "ادخل كلمة المرور",
@@ -161,14 +84,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: 6),
+              const SizedBox(height: 18),
               Center(
                 child: SizedBox(
                   width: 200,
                   height: 50,
                   child: PrimaryButton(
                     text: "تسجيل",
-                    color: const Color(0xFF5D4037),
+                    gradient: AppColorBrown.gradientBrown,
                     onPressed: () async {
                       final AuthResponse response = await supabase.auth
                           .signInWithPassword(
@@ -207,37 +130,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   Text('لا تمتلك حساب؟', style: TextStyle(color: Colors.grey)),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Align(
-                alignment: Alignment.center,
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 5),
-                  child: Text(
-                    '________أو_________',
-                    style: TextStyle(color: Color(0xFF7E5A3B)),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SocialIconButton(
-                    onTap: () {},
-                    imagePath: 'assets/images/google.svg',
-                  ),
-                  const SizedBox(width: 24),
-                  SocialIconButton(
-                    onTap: () {},
-                    imagePath: 'assets/images/facebook.svg',
-                  ),
-                  const SizedBox(width: 24),
-                  SocialIconButton(
-                    onTap: () {},
-                    imagePath: 'assets/images/apple.svg',
-                  ),
                 ],
               ),
             ],

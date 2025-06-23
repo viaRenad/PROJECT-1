@@ -4,8 +4,8 @@ import 'package:mulabbi/core/colors.dart';
 import 'package:mulabbi/views/auth/login_page.dart';
 import 'package:mulabbi/views/auth/singup_page.dart';
 
-class TrackFallabackNotAuthorized extends StatelessWidget {
-  const TrackFallabackNotAuthorized({super.key});
+class TrackFallbackNotAuthorized extends StatelessWidget {
+  const TrackFallbackNotAuthorized({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +13,11 @@ class TrackFallabackNotAuthorized extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Image.asset(
-          "assets/images/steps-background.png",
+          "assets/images/track_page.png",
           fit: BoxFit.cover,
-          width: 600,
+          width: 800,
         ),
         Column(
-          spacing: 8,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ShaderMask(
@@ -28,19 +27,20 @@ class TrackFallabackNotAuthorized extends StatelessWidget {
               child: Text(
                 "تحتاج الى تسجيل الدخول",
                 textDirection: TextDirection.rtl,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
               ),
             ),
-            Text(
+            const SizedBox(height: 8),
+            const Text(
               "سجل دخولك لمتابعة مناسكك\nخطوة بخطوة عند بدء رحلتك",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 17, color: Colors.black87),
             ),
-            SizedBox(height: 24),
+            const SizedBox(height: 15),
             InkWell(
               onTap: () {
                 Get.to(() => LoginScreen());
@@ -55,22 +55,34 @@ class TrackFallabackNotAuthorized extends StatelessWidget {
                 child: Center(
                   child: Text(
                     "تسجيل الدخول",
-                    style: TextStyle(
-                      fontSize: 16,
+                    style: const TextStyle(
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      shadows: [
+                        Shadow(
+                          offset: Offset(2, 2),
+                          blurRadius: 4,
+                          color: Colors.black45,
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ),
             ),
+            const SizedBox(height: 8),
             InkWell(
               onTap: () {
                 Get.to(() => SingupPage());
               },
-              child: Text(
+              child: const Text(
                 "إنشاء حساب جديد",
-                style: TextStyle(color: Color(0xFF734218)),
+                style: TextStyle(
+                  color: Color(0xFF734218),
+                  decoration: TextDecoration.underline,
+                  decorationColor: Color(0xFF734218),
+                ),
               ),
             ),
           ],

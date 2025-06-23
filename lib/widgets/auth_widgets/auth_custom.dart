@@ -4,8 +4,16 @@ import 'package:mulabbi/core/colors.dart';
 class AuthContainer extends StatelessWidget {
   final String title;
   final Widget child;
+  final double? cardHeight;
+  final double? cardWidth;
 
-  const AuthContainer({super.key, required this.title, required this.child});
+  const AuthContainer({
+    super.key,
+    required this.title,
+    required this.child,
+    this.cardHeight,
+    this.cardWidth,
+  });
 
   static const colorBox = AppColorBrown.gradientPrimary;
 
@@ -46,7 +54,7 @@ class AuthContainer extends StatelessWidget {
                             Text(
                               title,
                               style: const TextStyle(
-                                fontSize: 28,
+                                fontSize: 26,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),
@@ -64,8 +72,8 @@ class AuthContainer extends StatelessWidget {
                     right: 0,
                     child: Center(
                       child: Container(
-                        width: 388,
-                        height: 495,
+                        width: cardWidth ?? 388,
+                        height: cardHeight ?? 450,
                         padding: const EdgeInsets.all(24),
                         decoration: BoxDecoration(
                           border: Border.all(

@@ -17,15 +17,13 @@ class PrayerItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color textColor =
-        isActive ? Colors.white : Colors.white.withOpacity(0.80);
+    final textColor = isActive ? Colors.white : Colors.white.withOpacity(0.80);
 
     return SizedBox(
       child: Stack(
         clipBehavior: Clip.none,
         alignment: Alignment.center,
         children: [
-          // Prayer content
           Transform.translate(
             offset: const Offset(0, -5),
             child: Column(
@@ -64,8 +62,6 @@ class PrayerItem extends StatelessWidget {
               ],
             ),
           ),
-
-          // Pointer overlay
           if (isActive)
             const Positioned(
               top: 46,

@@ -33,8 +33,8 @@ dependencies:
   flutter_svg: ^2.0.7
   prayers_times: ^0.0.6
   hijri: ^3.0.0
-  http: ^0.13.6
-  geolocator: ^10.1.0
+  http: ^1.2.1
+  geolocator: ^12.0.0
   intl: any
   hijri_picker: ^3.0.0
   provider: ^6.1.2
@@ -53,7 +53,7 @@ dependencies:
   shared_preferences: ^2.5.3
   device_info_plus: ^11.4.0
   jhijri: ^1.0.0
-  internet_connection_checker_plus: ^1.0.1
+  internet_connection_checker_plus: ^2.7.2
   share_plus: ^11.0.0
   timeago: ^3.7.1
   lottie: ^3.0.0
@@ -122,7 +122,7 @@ flutter:
 
     - family: AlNile
       fonts:
-        - asset: assets/fonts/nile/Al Nile.ttc
+        - asset: assets/fonts/nile/Al_Nile.ttc
 
   #   - family: Schyler
   #     fonts:

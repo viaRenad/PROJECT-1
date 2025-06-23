@@ -11,7 +11,7 @@ class AdhkarView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 230, 220, 207),
+      backgroundColor: Color(0xFFF5F2EE),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

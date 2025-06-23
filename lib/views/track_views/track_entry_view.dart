@@ -23,7 +23,7 @@ class _TrackEntryViewState extends State<TrackEntryView> {
     Widget render = Stack(
       alignment: Alignment.center,
       children: [
-        Image.asset("assets/images/steps-background.png"),
+        Image.asset("assets/images/track_page.png"),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           spacing: 40,
@@ -52,7 +52,7 @@ class _TrackEntryViewState extends State<TrackEntryView> {
                 alignment: Alignment.center,
                 children: [
                   Image.asset(
-                    "assets/images/steps-background.png",
+                    "assets/images/track_page.png",
                     width: 600,
                     fit: BoxFit.cover,
                   ),
@@ -81,7 +81,7 @@ class _TrackEntryViewState extends State<TrackEntryView> {
             render = TrackFallbackNonActive();
           }
           if (trackController.currentUserId == null) {
-            render = TrackFallabackNotAuthorized();
+            render = TrackFallbackNotAuthorized();
           }
           if (snapshot.connectionState == ConnectionState.done &&
               trackController.isTrackActive) {
@@ -92,7 +92,7 @@ class _TrackEntryViewState extends State<TrackEntryView> {
               case "qeran":
                 render = QeranView();
                 break;
-              case "tmatoa":
+              case "tamatoa":
                 render = TmatoaView();
                 break;
               case "umrah":

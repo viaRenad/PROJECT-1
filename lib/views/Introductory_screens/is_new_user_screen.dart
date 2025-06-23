@@ -33,15 +33,19 @@ class _IsNewUserScreenState extends State<IsNewUserScreen> {
             ),
           );
         }
-        if (!snapshot.hasData || getFirstTime() == false) {
-          return WelcomeScreen();
-        }
 
-        if (!snapshot.hasData) {
-          return OnboardingPage1();
-        }
+        return !snapshot.hasData
+            ? FutureBuilder(
+              future: getFirstTime(),
+              builder: (context, snapshot) {
+                if (snapshot.data == false) {
+                  return WelcomeScreen();
+                }
 
-        return MainScaffold(userType: UserType.user);
+                return OnboardingPage1();
+              },
+            )
+            : MainScaffold(userType: UserType.user);
       },
     );
   }

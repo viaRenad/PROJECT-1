@@ -24,7 +24,7 @@ class _PrayerTimeWidgetState extends State<PrayerTimeWidget> {
 
   void _loadPrayerTimes() {
     final coordinates = Coordinates(21.3891, 39.8579); // مكة المكرمة
-    final params = CalculationMethod.muslim_world_league.getParameters();
+    final params = CalculationMethod.umm_al_qura.getParameters();
     final date = DateComponents.from(DateTime.now());
     prayerTimes = PrayerTimes(coordinates, date, params);
 

@@ -45,6 +45,7 @@ class ContentItemCard extends StatelessWidget {
                 duaItem.title,
                 style: TextStyle(
                   fontSize: 15,
+                  fontFamily: 'AlNile',
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF7E5A3B),
                 ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mulabbi/core/colors.dart';
+import 'package:mulabbi/main.dart';
+import 'package:mulabbi/views/Introductory_screens/welcome_screen.dart';
 import 'package:mulabbi/views/settings_views/user_profile.dart';
-import 'package:mulabbi/widgets/settings_widgets/language_row.dart';
 import 'package:mulabbi/widgets/settings_widgets/settings_row.dart';
 import 'package:mulabbi/widgets/settings_widgets/toggle_row.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -44,6 +45,17 @@ class _SettingsPageState extends State<SettingsPage> {
     }
   }
 
+  Future<void> _signOut() async {
+    try {
+      await Supabase.instance.client.auth.signOut();
+      await storage.remove("token");
+      Navigator.of(context).pushAndRemoveUntil(
+        MaterialPageRoute(builder: (context) => WelcomeScreen()),
+        (_) => false,
+      );
+    } catch (e) {}
+  }
+
   @override
   Widget build(BuildContext context) {
     return Directionality(
@@ -82,22 +94,6 @@ class _SettingsPageState extends State<SettingsPage> {
                               Icons.person,
                               size: 90,
                               color: Color(0xFFA57859),
-                            ),
-                          ),
-                          Positioned(
-                            bottom: 4,
-                            right: 4,
-                            child: Container(
-                              padding: const EdgeInsets.all(6),
-                              decoration: const BoxDecoration(
-                                color: Color(0xFF9E7354),
-                                shape: BoxShape.circle,
-                              ),
-                              child: const Icon(
-                                Icons.camera_alt_rounded,
-                                size: 16,
-                                color: Colors.white,
-                              ),
                             ),
                           ),
                         ],
@@ -150,15 +146,6 @@ class _SettingsPageState extends State<SettingsPage> {
                     },
                   ),
                   const Divider(thickness: 1, color: Color(0xFFEDEDED)),
-                  LanguageRow(
-                    selectedLanguage: selectedLanguage,
-                    onLanguageChanged: (lang) {
-                      setState(() {
-                        selectedLanguage = lang;
-                      });
-                    },
-                  ),
-                  const Divider(thickness: 1, color: Color(0xFFEDEDED)),
                   SettingsRow(
                     title: 'الأسئلة الشائعة & الدعم',
                     icon: Icons.help_outline,
@@ -170,6 +157,12 @@ class _SettingsPageState extends State<SettingsPage> {
                         ),
                       );
                     },
+                  ),
+                  const Divider(thickness: 1, color: Color(0xFFEDEDED)),
+                  SettingsRow(
+                    title: 'تسجيل خروج',
+                    icon: Icons.logout,
+                    onTap: _signOut,
                   ),
                 ],
               ),

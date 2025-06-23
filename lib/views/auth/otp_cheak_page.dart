@@ -15,7 +15,6 @@ class OtpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(OtpController()); // استخدم GetX Controller
     controller.startTimer();
-    TextEditingController codeController = TextEditingController();
     return AuthContainer(
       title: "تأكيد الحساب",
       child: Padding(
@@ -110,7 +109,7 @@ class OtpScreen extends StatelessWidget {
                 height: 51,
                 child: PrimaryButton(
                   text: "تحقق",
-                  color: const Color(0xFF5D4037),
+                  gradient: AppColorBrown.gradientBrown,
                   onPressed: () => controller.verifyOtp(email),
                 ),
               ),

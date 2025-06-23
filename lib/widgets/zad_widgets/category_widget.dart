@@ -4,11 +4,15 @@ class CategoryWidget extends StatelessWidget {
   final String title;
   final String imagePath;
   final VoidCallback onTap;
+  final double width;
+  final double heigth;
   const CategoryWidget({
     super.key,
     required this.title,
     required this.imagePath,
     required this.onTap,
+    required this.width,
+    required this.heigth,
   });
 
   @override
@@ -22,25 +26,24 @@ class CategoryWidget extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: 130,
-        height: 120,
+        width: 118,
+        height: 110,
         decoration: BoxDecoration(
-          color: const Color.fromARGB(174, 227, 224, 208),
+          color: const Color(0xFFEBE4D9),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: Color.fromARGB(255, 192, 174, 160),
-            width: 2,
+            color: const Color.fromRGBO(218, 201, 178, 0.70),
+            width: 3,
           ),
-          shape: BoxShape.rectangle,
           boxShadow: [
             BoxShadow(
-              color: Colors.black12,
+              color: Colors.black.withOpacity(0.25),
               blurRadius: 4,
-              offset: Offset(0, 2),
+              offset: const Offset(4, 4),
             ),
           ],
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+        padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 1),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -56,12 +59,7 @@ class CategoryWidget extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             Spacer(),
-            Image(
-              image: imageProvider,
-              width: 130,
-              height: 60,
-              fit: BoxFit.contain,
-            ),
+            Image(image: imageProvider, width: width, height: heigth),
           ],
         ),
       ),

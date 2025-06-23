@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mulabbi/core/colors.dart';
 import 'package:mulabbi/views/Introductory_screens/onboarding/onboarding3.dart';
 import 'package:mulabbi/views/Introductory_screens/welcome_screen.dart';
-import 'package:mulabbi/widgets/introductory_screens_widgets/language_icon_button.dart';
-import 'package:mulabbi/widgets/introductory_screens_widgets/language_dialog.dart';
 
 class OnboardingPage2 extends StatefulWidget {
   const OnboardingPage2({super.key});
@@ -48,11 +46,8 @@ class _OnboardingPage2State extends State<OnboardingPage2> {
                     vertical: 20,
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      LanguageIconButton(
-                        onTap: () => showLanguageDialog(context),
-                      ),
                       GestureDetector(
                         onTap: () {
                           Navigator.pushReplacement(

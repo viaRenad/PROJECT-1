@@ -13,7 +13,7 @@ class ChooseNuskView extends StatelessWidget {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          Image.asset("assets/images/steps-background.png"),
+          Image.asset("assets/images/track_page.png"),
           Padding(
             padding: const EdgeInsets.only(top: 100),
             child: Column(
@@ -43,6 +43,7 @@ class ChooseNuskView extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
+                        if (trackController.isPending) return;
                         trackController.registerNewTrack(1);
                       },
                       child: Container(
@@ -83,6 +84,7 @@ class ChooseNuskView extends StatelessWidget {
 
                     InkWell(
                       onTap: () {
+                        if (trackController.isPending) return;
                         trackController.registerNewTrack(2);
                       },
                       child: Container(
@@ -123,6 +125,7 @@ class ChooseNuskView extends StatelessWidget {
 
                     InkWell(
                       onTap: () {
+                        if (trackController.isPending) return;
                         trackController.registerNewTrack(3);
                       },
                       child: Container(

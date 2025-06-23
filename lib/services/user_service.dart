@@ -184,4 +184,8 @@ class UserService {
           );
         });
   }
+
+  static Future<void> registerFirstTime() async {
+    await storage.setBool("isFirstTime", false);
+  }
 }

@@ -4,6 +4,9 @@
     "steps": [
       {
         "timing": "في أي وقت في السنة",
+        "shortTitle": "الإحرام للعمرة",
+        "shortDescription": "أحرم من الميقات بملابس الإحرام، وانْوِ العمرة ولبِّ بالتلبية",
+        "shortImage": "assets/images/step-short-1.png",
         "details": [
           {
             "highlight": "انْوِ العمرة:",
@@ -19,12 +22,15 @@
           },
           {
             "highlight": "ابدأ بالتلبية:",
-            "description": "ردد: \"لبيك اللهم عمرة، لبيك اللهم لبيك لبيك...\" وكررها من قلبك. يُستحب للرجل الجهر بها، أما المرأة فتخفض صوتها بما يُسمِع من بجوارها فقط"
+            "description": "ردد: \"لبيك اللهم عمرة، لبيك اللهم لبيك لبيك.x..\" وكررها من قلبك. يُستحب للرجل الجهر بها، أما المرأة فتخفض صوتها بما يُسمِع من بجوارها فقط"
           }
         ]
       },
       {
         "timing": "عند وصولك لمكة اول مرة",
+        "shortTitle": "طواف العمرة",
+        "shortDescription": "طُف سبعة أشواط حول الكعبة بداية من الحجر الأسود",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "بدأ من الحجر الأسود:",
@@ -46,6 +52,9 @@
       },
       {
         "timing": "بعد اتمام طواف العمرة",
+        "shortTitle": "السعي بين الصفا والمروة",
+        "shortDescription": "اصعد إلى الصفا، وابدأ السعي حتى المروة سبعة أشواط ذهابًا وإيابًا",
+        "shortImage": "assets/images/step-short-3-umrah.png",
         "details": [
           {
             "highlight": "ابدأ من الصفا:",
@@ -67,6 +76,9 @@
       },
       {
         "timing": "بعد السعي مباشرة",
+        "shortTitle": "الحلق أو التقصير",
+        "shortDescription": "احلق رأسك أو قَصِّر منه للتحلّل من الإحرام وإتمام العمرة",
+        "shortImage": "assets/images/step-short-4-umrah.png",
         "details": [
           {
             "highlight": "قصّر أو احلق شعرك:",
@@ -85,6 +97,9 @@
     "steps": [
       {
         "timing": "من أول شوال وحتى 8 ذو الحجة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "أحرم من الميقات بالحج، ثم أدِّ طواف القدوم وسَعْي الحج، وابقَ على إحرامك",
+        "shortImage": "assets/images/step-short-2.png",
         "details": [
           {
             "highlight": "انْوِ الدخول في النسك:",
@@ -106,6 +121,9 @@
       },
       {
         "timing": "عند وصولك لمكة اول مرة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "أحرم من الميقات بالحج، ثم أدِّ طواف القدوم وسَعْي الحج، وابقَ على إحرامك",
+        "shortImage": "assets/images/step-short-2.png",
         "details": [
           {
             "highlight": "بدأ من الحجر الأسود:",
@@ -127,6 +145,9 @@
       },
       {
         "timing": "بعد اتمام طواف القدوم",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "أحرم من الميقات بالحج، ثم أدِّ طواف القدوم وسَعْي الحج، وابقَ على إحرامك",
+        "shortImage": "assets/images/step-short-2.png",
         "details": [
           {
             "highlight": "ابدأ من الصفا:",
@@ -148,6 +169,9 @@
       },
       {
         "timing": "8 ذو الحجة – يوم التروية",
+        "shortTitle": "يوم التروية",
+        "shortDescription": "توجّه إلى مِنَى للمبيت استعدادًا ليوم عرفة",
+        "shortImage": "assets/images/step-short-2.png",
         "details": [
           {
             "highlight": "انطلق إلى منى بعد الشروق:",
@@ -165,6 +189,9 @@
       },
       {
         "timing": "9 ذو الحجة – يوم عرفة",
+        "shortTitle": "يوم عرفة",
+        "shortDescription": "اتّجه إلى عرفة للوقوف، ثم انفر بعد الغروب إلى مزدلفة للمبيت",
+        "shortImage": "assets/images/step-short-3.png",
         "details": [
           {
             "highlight": "توجّه إلى عرفة بعد الفجر:",
@@ -182,6 +209,9 @@
       },
       {
         "timing": "ليلة 10 ذو الحجة - بعد غروب شمس عرفة",
+        "shortTitle": "يوم عرفة",
+        "shortDescription": "اتّجه إلى عرفة للوقوف، ثم انفر بعد الغروب إلى مزدلفة للمبيت",
+        "shortImage": "assets/images/step-short-3.png",
         "details": [
           {
             "highlight": "اتجه إلى مزدلفة بعد غروب الشمس:",
@@ -207,6 +237,9 @@
       },
       {
         "timing": "10 ذو الحجة - يوم النحر",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ابدأ برمي جمرة العقبة، ثم احلق أو قصّر، وأدِّ طواف الإفاضة في مكة",
+        "shortImage": "assets/images/step-short-4.png",
         "details": [
           {
             "highlight": "اتجه إلى منى بعد الفجر:",
@@ -224,6 +257,9 @@
       },
       {
         "timing": "10 ذو الحجة - بعد رمي جمرة العقبة",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ابدأ برمي جمرة العقبة، ثم احلق أو قصّر، وأدِّ طواف الإفاضة في مكة",
+        "shortImage": "assets/images/step-short-4.png",
         "details": [
           {
             "highlight": "قم بالحلق أو التقصير:",
@@ -241,6 +277,9 @@
       },
       {
         "timing": "10 ذو الحجة - بعد التحلل الأول",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ابدأ برمي جمرة العقبة، ثم احلق أو قصّر، وأدِّ طواف الإفاضة في مكة",
+        "shortImage": "assets/images/step-short-4.png",
         "details": [
           {
             "highlight": "توجّه إلى المسجد الحرام:",
@@ -262,6 +301,9 @@
       },
       {
         "timing": "11 الى 13 ذو الحجة - أيام التشريق",
+        "shortTitle": "أول أيام التشريق",
+        "shortDescription": "ارمِ الجمرات الثلاث بالترتيب، وبت في مِنَى لاستكمال النسك",
+        "shortImage": "assets/images/step-short-5.png",
         "details": [
           {
             "highlight": "ابدأ الرمي بعد الزوال:",
@@ -279,6 +321,9 @@
       },
       {
         "timing": "قبل مغادرة مكة",
+        "shortTitle": "طواف الوداع ",
+        "shortDescription": "قبل مغادرتك مكة، أدِّ طواف الوداع حول الكعبة",
+        "shortImage": "assets/images/step-short-6.png",
         "details": [
           {
             "highlight": "طُف سبعة أشواط:",
@@ -301,6 +346,9 @@
     "steps": [
       {
         "timing": "من أول شوال وحتى 8 ذو الحجة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "ابدأ بالإحرام للعمرة، ثم أدِّ طواف القدوم وسَعْي العمرة فور وصولك، وابقَ على إحرامك حتى يوم النحر",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "انْوِ القِران:",
@@ -322,6 +370,9 @@
       },
       {
         "timing": "عند وصولك لمكة اول مرة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "ابدأ بالإحرام للعمرة، ثم أدِّ طواف القدوم وسَعْي العمرة فور وصولك، وابقَ على إحرامك حتى يوم النحر",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "بدأ من الحجر الأسود:",
@@ -343,6 +394,9 @@
       },
       {
         "timing": "بعد اتمام طواف القدوم",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "ابدأ بالإحرام للعمرة، ثم أدِّ طواف القدوم وسَعْي العمرة فور وصولك، وابقَ على إحرامك حتى يوم النحر",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "ابدأ من الصفا:",
@@ -364,6 +418,9 @@
       },
       {
         "timing": "8 ذو الحجة – يوم التروية",
+        "shortTitle": "يوم التروية",
+        "shortDescription": "توجّه إلى مِنَى للمبيت استعدادًا ليوم عرفة",
+        "shortImage": "assets/images/step-short-2.png",
         "details": [
           {
             "highlight": "انطلق إلى منى بعد الشروق:",
@@ -381,6 +438,9 @@
       },
       {
         "timing": "9 ذو الحجة – يوم عرفة",
+        "shortTitle": "يوم عرفة",
+        "shortDescription": "اتّجه إلى عرفة للوقوف، ثم انفر بعد الغروب إلى مزدلفة للمبيت",
+        "shortImage": "assets/images/step-short-3.png",
         "details": [
           {
             "highlight": "توجّه إلى عرفة بعد الفجر:",
@@ -398,6 +458,9 @@
       },
       {
         "timing": "ليلة 10 ذو الحجة - بعد غروب شمس عرفة",
+        "shortTitle": "يوم عرفة",
+        "shortDescription": "اتّجه إلى عرفة للوقوف، ثم انفر بعد الغروب إلى مزدلفة للمبيت",
+        "shortImage": "assets/images/step-short-3.png",
         "details": [
           {
             "highlight": "اتجه إلى مزدلفة بعد غروب الشمس:",
@@ -423,6 +486,9 @@
       },
       {
         "timing": "10 ذو الحجة - يوم النحر",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "اتجه إلى منى بعد الفجر:",
@@ -440,6 +506,9 @@
       },
       {
         "timing": "10 الى 13 ذو الحجة - أفضلها يوم النحر",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "اذبح الهدي بعد رمي جمرة العقبة:",
@@ -465,6 +534,9 @@
       },
       {
         "timing": "10 ذو الحجة - بعد رمي جمرة العقبة",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "قم بالحلق أو التقصير:",
@@ -482,6 +554,9 @@
       },
       {
         "timing": "10 ذو الحجة - بعد التحلل الأول",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "توجّه إلى المسجد الحرام:",
@@ -503,6 +578,9 @@
       },
       {
         "timing": "11 الى 13 ذو الحجة - أيام التشريق",
+        "shortTitle": "أول أيام التشريق",
+        "shortDescription": "ارمِ الجمرات الثلاث بالترتيب، وبت في مِنَى لاستكمال النسك",
+        "shortImage": "assets/images/step-short-5.png",
         "details": [
           {
             "highlight": "ابدأ الرمي بعد الزوال:",
@@ -520,6 +598,9 @@
       },
       {
         "timing": "قبل مغادرة مكة",
+        "shortTitle": "طواف الوداع ",
+        "shortDescription": "قبل مغادرتك مكة، أدِّ طواف الوداع حول الكعبة",
+        "shortImage": "assets/images/step-short-8.png",
         "details": [
           {
             "highlight": "طُف سبعة أشواط:",
@@ -542,6 +623,9 @@
     "steps": [
       {
         "timing": "من أول شوال وحتى 8 ذو الحجة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "أحرم من الميقات لأداء العمرة، ثم طُف، وسَعَ، واحلق أو قصّر لإنهائها",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "انْوِ عمرة التمتع:",
@@ -563,6 +647,9 @@
       },
       {
         "timing": "عند وصولك لمكة اول مرة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "أحرم من الميقات لأداء العمرة، ثم طُف، وسَعَ، واحلق أو قصّر لإنهائها",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "بدأ من الحجر الأسود:",
@@ -584,6 +671,9 @@
       },
       {
         "timing": "بعد طواف العمرة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "أحرم من الميقات لأداء العمرة، ثم طُف، وسَعَ، واحلق أو قصّر لإنهائها",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "ابدأ من الصفا:",
@@ -605,6 +695,9 @@
       },
       {
         "timing": "بعد السعي مباشرة",
+        "shortTitle": "عند الوصول",
+        "shortDescription": "أحرم من الميقات لأداء العمرة، ثم طُف، وسَعَ، واحلق أو قصّر لإنهائها",
+        "shortImage": "assets/images/step-short-1-alt.png",
         "details": [
           {
             "highlight": "قم بالحلق أو التقصير:",
@@ -622,6 +715,9 @@
       },
       {
         "timing": "8 ذو الحجة - يوم التروية",
+        "shortTitle": "يوم التروية",
+        "shortDescription": "أحرم من جديد للحج، ثم توجّه إلى مِنَى للمبيت استعدادًا ليوم عرفة",
+        "shortImage": "assets/images/step-short-2.png",
         "details": [
           {
             "highlight": "أحرم من مكانك في مكة:",
@@ -643,6 +739,9 @@
       },
       {
         "timing": "8 ذو الحجة – يوم التروية",
+        "shortTitle": "يوم التروية",
+        "shortDescription": "أحرم من جديد للحج، ثم توجّه إلى مِنَى للمبيت استعدادًا ليوم عرفة",
+        "shortImage": "assets/images/step-short-2.png",
         "details": [
           {
             "highlight": "انطلق إلى منى بعد الشروق:",
@@ -660,6 +759,9 @@
       },
       {
         "timing": "9 ذو الحجة – يوم عرفة",
+        "shortTitle": "يوم عرفة",
+        "shortDescription": "اتّجه إلى عرفة للوقوف، ثم انفر بعد الغروب إلى مزدلفة للمبيت",
+        "shortImage": "assets/images/step-short-3.png",
         "details": [
           {
             "highlight": "توجّه إلى عرفة بعد الفجر:",
@@ -677,6 +779,9 @@
       },
       {
         "timing": "ليلة 10 ذو الحجة - بعد غروب شمس عرفة",
+        "shortTitle": "يوم عرفة",
+        "shortDescription": "اتّجه إلى عرفة للوقوف، ثم انفر بعد الغروب إلى مزدلفة للمبيت",
+        "shortImage": "assets/images/step-short-3.png",
         "details": [
           {
             "highlight": "اتجه إلى مزدلفة بعد غروب الشمس:",
@@ -702,6 +807,9 @@
       },
       {
         "timing": "10 ذو الحجة - يوم النحر",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "اتجه إلى منى بعد الفجر:",
@@ -719,6 +827,9 @@
       },
       {
         "timing": "10 الى 13 ذو الحجة - أفضلها يوم النحر",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "اذبح الهدي بعد رمي جمرة العقبة:",
@@ -744,6 +855,9 @@
       },
       {
         "timing": "10 ذو الحجة - بعد رمي جمرة العقبة",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "قم بالحلق أو التقصير:",
@@ -761,6 +875,9 @@
       },
       {
         "timing": "10 ذو الحجة - بعد التحلل الأول",
+        "shortTitle": "يوم النحر",
+        "shortDescription": "ارمِ جمرة العقبة، ثم اذبح الهدي، واحلق أو قصّر، وأدِّ طواف الإفاضة",
+        "shortImage": "assets/images/step-short-4-alt.png",
         "details": [
           {
             "highlight": "توجّه إلى المسجد الحرام:",
@@ -774,6 +891,9 @@
       },
       {
         "timing": "بعد طواف الإفاضة",
+        "shortTitle": "سعي الحج",
+        "shortDescription": "أدِّ سعي الحج بين الصفا والمروة بعد طواف الإفاضة لإتمام النسك",
+        "shortImage": "assets/images/step-short-5-alt.png",
         "details": [
           {
             "highlight": "ابدأ من الصفا:",
@@ -803,6 +923,9 @@
       },
       {
         "timing": "11 الى 13 ذو الحجة - أيام التشريق",
+        "shortTitle": "أول أيام التشريق",
+        "shortDescription": "ارمِ الجمرات الثلاث بالترتيب، وبت في مِنَى لاستكمال النسك",
+        "shortImage": "assets/images/step-short-6.png",
         "details": [
           {
             "highlight": "ابدأ الرمي بعد الزوال:",
@@ -820,6 +943,9 @@
       },
       {
         "timing": "قبل مغادرة مكة",
+        "shortTitle": "طواف الوداع والسعي",
+        "shortDescription": "قبل مغادرتك مكة، أدِّ طواف الوداع حول الكعبة",
+        "shortImage": "assets/images/step-short-8.png",
         "details": [
           {
             "highlight": "طُف سبعة أشواط:",

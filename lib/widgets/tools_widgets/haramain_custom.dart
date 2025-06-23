@@ -73,12 +73,12 @@ class HaramCard extends StatelessWidget {
 
           Positioned(
             bottom: 1,
-            right: 10,
+            right: 14,
             child: Stack(
               alignment: Alignment.bottomRight,
               children: [
                 Image.asset(
-                  'assets/Vector.png',
+                  'assets/images/Vector.png',
                   width: 263,
                   height: 244,
                   fit: BoxFit.cover,

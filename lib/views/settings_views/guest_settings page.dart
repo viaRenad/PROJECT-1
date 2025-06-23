@@ -94,7 +94,7 @@ class GuestSettingsPage extends StatelessWidget {
                       color: Color(0xFF7E573B),
                     ),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 28),
 
                   // ✅ Wrap only this part with horizontal padding
                   InkWell(
@@ -102,7 +102,7 @@ class GuestSettingsPage extends StatelessWidget {
                       Get.to(() => LoginScreen());
                     },
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 100),
+                      padding: const EdgeInsets.symmetric(horizontal: 95),
                       child: Column(
                         children: [
                           // 🔘 Gradient login button
@@ -148,12 +148,12 @@ class GuestSettingsPage extends StatelessWidget {
                               Get.to(() => SingupPage());
                             },
                             child: const Text(
-                              'انشاء حساب جديد',
+                              "إنشاء حساب جديد",
                               style: TextStyle(
-                                fontFamily: 'Cairo',
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.w500,
+                                fontSize: 13,
                                 color: Color(0xFF734218),
+                                decoration: TextDecoration.underline,
+                                decorationColor: Color(0xFF734218),
                               ),
                             ),
                           ),

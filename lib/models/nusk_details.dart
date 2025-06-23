@@ -9,16 +9,16 @@ class nusks_details {
     if (json['steps'] != null) {
       steps = <Steps>[];
       json['steps'].forEach((v) {
-        steps!.add(new Steps.fromJson(v));
+        steps!.add(Steps.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['type'] = this.type;
-    if (this.steps != null) {
-      data['steps'] = this.steps!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['type'] = type;
+    if (steps != null) {
+      data['steps'] = steps!.map((v) => v.toJson()).toList();
     }
     return data;
   }
@@ -26,25 +26,40 @@ class nusks_details {
 
 class Steps {
   String? timing;
+  String? shortTitle;
+  String? shortDescription;
+  String? shortImage;
   List<Details>? details;
 
-  Steps({this.timing, this.details});
+  Steps({
+    this.timing,
+    this.shortTitle,
+    this.shortDescription,
+    this.shortImage,
+    this.details,
+  });
 
   Steps.fromJson(Map<String, dynamic> json) {
     timing = json['timing'];
+    shortTitle = json['shortTitle'];
+    shortDescription = json['shortDescription'];
+    shortImage = json['shortImage'];
     if (json['details'] != null) {
       details = <Details>[];
       json['details'].forEach((v) {
-        details!.add(new Details.fromJson(v));
+        details!.add(Details.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['timing'] = this.timing;
-    if (this.details != null) {
-      data['details'] = this.details!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['timing'] = timing;
+    data["shortTitle"] = shortTitle;
+    data["shortDescription"] = shortDescription;
+    data["shortImage"] = shortImage;
+    if (details != null) {
+      data['details'] = details!.map((v) => v.toJson()).toList();
     }
     return data;
   }
@@ -62,9 +77,9 @@ class Details {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['highlight'] = this.highlight;
-    data['description'] = this.description;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['highlight'] = highlight;
+    data['description'] = description;
     return data;
   }
 }
